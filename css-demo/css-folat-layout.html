@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float Layout</title>
+  <style>
+    .container {
+      width: 800px;
+      height: 200px;
+    }
+    .left {
+      background: red;
+      float:left;
+      height: 100%;
+      width: 200px;
+    }
+    .middle {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    .right {
+      background: blue;
+      margin-left: 200px;
+      height: 100%;
+      width: 200px;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">左</div>
+    <div class="right">右</div>
+    <div class="middle">中间</div>
+    <!-- HTML的渲染也是按照顺序的.如果我们选用的方式为左、中间、右.根据float会尽量向上靠,那么左float占据了左上的200px，然后是中间占据了剩下的600px,此时右浮动就只能让开中间控件的右侧，往下按一段距离。调换位置以后，左右都顶上位置了，再让中间的渲染出来，此时就不会出现右浮动靠下的情况了 -->
+  </div>
+</body>
+</html>

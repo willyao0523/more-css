@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position</title>
+  <style>
+    .p1 {
+      background: red;
+      width: 100px;
+      height: 100px;
+    }
+    .p2 {
+      background: blue;
+      position: relative;
+      right: -10px;
+      top: -10px;
+      width: 100px;
+      height: 100px;
+    }
+    .p3 {
+      position: absolute;
+      left: 80px;
+      top: 30px;
+      background: green;
+      width: 100px;
+      height: 100px;
+    }
+    .p3-1 {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: yellow;
+      left: -10px;
+      top: 10px;
+    }
+    .p4 {
+      background: red;
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      left: 0px;
+      bottom: 10px;
+    }
+    .p5 {
+      background: red;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="p1">
+    position:static
+  </div>
+  <div class="p2">
+    position:relative
+  </div>
+  <div class="p3">
+    position:absolute
+    <div class="p3-1">
+      absolute的位置是相对于最近的absolute/relative的,但是要注意他是相对于外部层级来说的.
+    </div>
+  </div>
+  <div class="p4">
+    position:fixed
+  </div>
+  <div class="p5">
+    p5
+  </div>
+</body>
+</html>
