@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS box shadow</title>
+  <style>
+    .container {
+      background: red;
+      width: 200px;
+      height: 200px;
+      margin: 100px;
+      /* 第一个元素是x方向偏移 第二个是y方向偏移 第三个是模糊区域 第四个是扩展区域 */
+      box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);
+      /* box-shadow: inset 5px 5px 10px 0 rgba(0,0,0,.2); */
+      /* box-shadow: 0 0 0 5px green; */
+    }
+  </style>
+</head>
+<body>
+  <div class="container"></div>
+</body>
+</html>
