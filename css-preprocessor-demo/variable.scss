@@ -1,0 +1,22 @@
+$fontSize: 12px;
+$bgColor: red;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wapper {
+  // lighten表示颜色变浅 配合第二个参数表示颜色变浅40%
+  background: lighten($bgColor, 40%);
+  .nav{
+    font-size: $fontSize;
+  }
+  .content{
+    // 数值类型可以直接+-
+    font-size: $fontSize + 2px;
+    &:hover{
+      background: $bgColor;
+    }
+  }
+}

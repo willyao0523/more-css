@@ -1,0 +1,20 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wapper {
+  background: white;
+}
+
+.wapper .nav {
+  font-size: 12px;
+}
+
+.wapper .content {
+  font-size: 14px;
+}
+
+.wapper .content:hover {
+  background: red;
+}

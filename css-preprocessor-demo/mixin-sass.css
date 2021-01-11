@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wapper {
+  background: #ffcccc;
+}
+
+.wapper .nav {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 34px;
+}
+
+.wapper .content {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 34px;
+}
+
+.wapper .content:hover {
+  background: red;
+}

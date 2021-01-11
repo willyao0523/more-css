@@ -1,0 +1,25 @@
+@fontSize: 12px;
+@bgColor: red;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.block {
+  font-size: @fontSize;
+  border: 1px solid #ccc;
+  border-radius: 34px;
+}
+
+.wapper {
+  background: lighten(@bgColor, 40%);
+  .nav:extend(.block){    
+  }
+  .content:extend(.block){
+    // &:extend(.block)
+    &:hover{
+      background: @bgColor;
+    }
+  }
+}
